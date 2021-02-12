@@ -19,3 +19,7 @@ forge 'https://forge.puppet.com'
   :git => 'https://github.com/neha12191/tomcat.git',
   :branch => 'production'
 
+ mod 'java',
+  :git => 'https://github.com/neha12191/java.git',
+  :branch => 'production'
+
