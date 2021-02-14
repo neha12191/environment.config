@@ -24,4 +24,5 @@ forge 'https://forge.puppet.com'
   :branch => 'production'
 
  mod 'OnlineShopping',
-  :git => 'https://github.com/neha12191/OnlineShopping.git'
+  :git => 'https://github.com/neha12191/OnlineShopping.git',
+  :branch => 'production'
