@@ -15,11 +15,11 @@ forge 'https://forge.puppet.com'
 #mod 'apache',
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
- mod 'tomcat',
-  :git => 'https://github.com/neha12191/tomcat.git',
-  :branch => 'production'
-
- mod 'java',
-  :git => 'https://github.com/neha12191/java.git',
-  :branch => 'production'
+# mod 'tomcat',
+ # :git => 'https://github.com/neha12191/tomcat.git',
+ # :branch => 'production'
+#
+# mod 'java',
+#  :git => 'https://github.com/neha12191/java.git',
+#  :branch => 'production'
 
