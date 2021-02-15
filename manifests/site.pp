@@ -24,19 +24,41 @@ File { backup => false }
 # Puppet Enterprise console and External Node Classifiers (ENC's).
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
-node default {
+#node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-
+#}
 class {'java' :
   package => 'java-1.8.0-openjdk-devel',
 }
 tomcat::install { '/opt/tomcat':
-  source_url => 'https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.0.M1/bin/apache-9.0.0.M1.tar.gz',
+ source_url => 'https://www-us.apache.org/dist/tomcat/tomcat-7/v7.0.x/bin/apache-tomcat-7.0.x.tar.gz',
 }
 tomcat::instance { 'default':
-  catalina_home => '/opt/tomcat',
+ catalina_home => '/opt/tomcat',
 }
-
+tomcat::config::server { 'tomcat7':
+  catalina_base => '/opt/tomcat7',
+  port          => '8105',
+}
+tomcat::config::server::connector { 'tomcat7-http':
+  catalina_base         => '/opt/tomcat7',
+  port                  => '8180',
+  protocol              => 'HTTP/1.1',
+  additional_attributes => {
+    'redirectPort' => '8543'
+  },
+}
+tomcat::config::server::connector { 'tomcat7-ajp':
+  catalina_base         => '/opt/tomcat7',
+  port                  => '8109',
+  protocol              => 'AJP/1.3',
+  additional_attributes => {
+    'redirectPort' => '8543'
+  },
+}
+tomcat::war { 'sample.war':
+  catalina_base => '/opt/tomcat9/first',
+  war_source    => '/opt/tomcat9/webapps/docs/appdev/sample/sample.war',
 }
