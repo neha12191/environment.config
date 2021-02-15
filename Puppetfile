@@ -5,6 +5,8 @@ forge 'https://forge.puppet.com'
 #mod 'puppetlabs/inifile', '3.0.0'
 #mod 'puppetlabs/stdlib',  '6.0.0'
 #mod 'puppetlabs/concat',  '6.0.0'
+mod 'puppetlabs-java', '6.5.0'
+mod 'puppetlabs-tomcat', '4.3.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
@@ -15,13 +17,13 @@ forge 'https://forge.puppet.com'
 #mod 'apache',
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
- mod 'tomcat',
-  :git => 'https://github.com/neha12191/tomcat.git',
-  :branch => 'production'
+# mod 'tomcat',
+ # :git => 'https://github.com/neha12191/tomcat.git',
+  #:branch => 'production'
 
- mod 'java',
-  :git => 'https://github.com/neha12191/java.git',
-  :branch => 'production'
+ #mod 'java',
+  #:git => 'https://github.com/neha12191/java.git',
+  #:branch => 'production'
 
  mod 'OnlineShopping',
   :git => 'https://github.com/neha12191/OnlineShopping.git',
