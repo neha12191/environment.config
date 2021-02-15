@@ -1,6 +1,6 @@
 node default {
    include java::install
  # include tomcat
-   include OnlineShopping
+  # include OnlineShopping
 
 }
