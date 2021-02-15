@@ -24,8 +24,19 @@ File { backup => false }
 # Puppet Enterprise console and External Node Classifiers (ENC's).
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
-#node default {
+node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-#}
+
+class {'java' :
+  package => 'java-1.8.0-openjdk-devel',
+}
+tomcat::install { '/opt/tomcat':
+  source_url => 'https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.0.M1/bin/apache-9.0.0.M1.tar.gz',
+}
+tomcat::instance { 'default':
+  catalina_home => '/opt/tomcat',
+}
+
+}
