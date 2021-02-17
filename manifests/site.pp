@@ -28,11 +28,10 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  include OnlineShopping
+  #include OnlineShopping
   #include apt
   #include jenkins
-  
-  class OnlineShopping {
+    class OnlineShopping {
   package { 'OnlineShopping':
     ensure => present,
   }
