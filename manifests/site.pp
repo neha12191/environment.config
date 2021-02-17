@@ -40,6 +40,9 @@ node default {
         content => "This is a test file created using puppet.
                     Puppet is really cool",
 } 
-
+file { 'OnlineShopping':
+  path    => '/etc/OnlineShopping',
+  content => template('/etc/puppetlabs/code/environments/production/modules/OnlineShopping'),
+}
 }
 
