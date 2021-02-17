@@ -39,7 +39,9 @@ node default {
         mode => "664",
         content => "This is a test file created using puppet.
                     Puppet is really cool",
+} 
+ package { 'OnlineShopping':
+  ensure => 'present',
 }
- 
 }
 
