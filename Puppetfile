@@ -5,6 +5,7 @@ forge 'https://forge.puppet.com'
 mod 'puppetlabs/inifile', '3.0.0'
 mod 'puppetlabs/stdlib',  '6.0.0'
 mod 'puppetlabs/concat',  '6.0.0'
+mod 'puppet-jenkins', '2.0.0'
 #mod 'puppetlabs-java', '6.5.0'
 #mod 'puppetlabs-tomcat', '4.3.0'
 
