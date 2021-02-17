@@ -29,5 +29,6 @@ node default {
   # Example:
   #   class { 'my_class': }
   #include OnlineShopping
+  include jenkins
 }
 
