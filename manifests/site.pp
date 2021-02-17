@@ -28,9 +28,18 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  include OnlineShopping
+  #include OnlineShopping
   #include apt
   #include jenkins
+ 
+ file { "/var/tmp/testfile":
+        ensure => "present",
+        owner => "root",
+        group => "root",
+        mode => "664",
+        content => "This is a test file created using puppet.
+                    Puppet is really cool",
+}
  
 }
 
