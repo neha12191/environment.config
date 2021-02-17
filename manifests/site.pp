@@ -29,7 +29,7 @@ node default {
   # Example:
   #   class { 'my_class': }
   #include OnlineShopping
-  include apt
-  include jenkins
+  #include apt
+  #include jenkins
 }
 
