@@ -6,7 +6,7 @@ forge 'https://forge.puppet.com'
 mod 'puppetlabs/stdlib',  '6.6.0'
 #mod 'puppetlabs/concat',  '6.0.0'
 mod 'puppetlabs-apt', '7.7.1'
-mod 'rtyler-jenkins', '1.7.0'
+mod 'rtyler-jenkins', '1.6.1'
 #mod 'puppetlabs-java', '6.5.0'
 #mod 'puppetlabs-tomcat', '4.3.0'
 
