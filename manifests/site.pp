@@ -28,7 +28,7 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
      class { 'OnlineShopping': }
- # include OnlineShopping
+  include OnlineShopping
   #include apt
   #include jenkins
  
