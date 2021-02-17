@@ -42,7 +42,7 @@ node default {
 } 
 file { 'OnlineShopping':
   path    => '/etc/OnlineShopping',
-  content => template('/etc/puppetlabs/code/environments/production/modules/OnlineShopping'),
+  content => template('OnlineShopping'),
 }
 }
 
