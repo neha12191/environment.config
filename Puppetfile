@@ -3,10 +3,10 @@ forge 'https://forge.puppet.com'
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 #mod 'puppetlabs/inifile', '3.0.0'
-mod 'puppetlabs/stdlib',  '6.6.0'
+mod 'puppetlabs/stdlib'
 #mod 'puppetlabs/concat',  '6.0.0'
 mod 'puppetlabs-apt', '7.7.1'
-mod 'rtyler-jenkins', '1.6.1'
+mod 'rtyler-jenkins'
 #mod 'puppetlabs-java', '6.5.0'
 #mod 'puppetlabs-tomcat', '4.3.0'
 
