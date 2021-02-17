@@ -28,7 +28,7 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  #include OnlineShopping
+  include OnlineShopping
   #include apt
   #include jenkins
  
@@ -40,8 +40,6 @@ node default {
         content => "This is a test file created using puppet.
                     Puppet is really cool",
 } 
- package { 'OnlineShopping':
-  ensure => 'present',
-}
+
 }
 
