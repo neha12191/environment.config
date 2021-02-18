@@ -16,6 +16,7 @@ mod 'puppetlabs/postgresql'
 mod 'stahnma/epel'
 mod 'puppetlabs/java'
 mod 'puppetlabs/tomcat'
+mod 'puppet-archive'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
