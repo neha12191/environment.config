@@ -30,14 +30,9 @@ node default {
      #class { 'OnlineShopping': }
   #include OnlineShopping
  # include tomcat
- # include java::install
-class { 'java': }
+  include java::install
+#class { 'java': }
 
-java::oracle { 'jdk8' :
-  ensure  => 'present',
-  version => '8',
-  java_se => 'jdk',
-}
 
 class { 'tomcat': }
 tomcat::install { '/opt/tomcat':
