@@ -15,7 +15,7 @@ mod 'rtyler/jenkins'
 mod 'puppetlabs/postgresql'
 mod 'stahnma/epel'
 mod 'puppetlabs/java'
-#mod 'puppetlabs-tomcat', '4.3.0'
+mod 'puppetlabs/tomcat'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
