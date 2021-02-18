@@ -31,9 +31,7 @@ node default {
   #include OnlineShopping
  # include tomcat
  # include java::install
-class { 'java' :
-  package => 'java-8-openjdk-amd64',
-}
+class { 'java' : }
 
 
 class { 'tomcat': }
