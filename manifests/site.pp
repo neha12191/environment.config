@@ -30,7 +30,7 @@ node default {
      #class { 'OnlineShopping': }
   #include OnlineShopping
   include tomcat
-  #include jenkins
+  include java::install
   
 }
 
