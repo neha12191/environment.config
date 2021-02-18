@@ -30,8 +30,10 @@ node default {
      #class { 'OnlineShopping': }
   #include OnlineShopping
  # include tomcat
-  include java::install
-#class { 'java': }
+ # include java::install
+class { 'java' :
+  package => 'java-1.8.0-openjdk-devel',
+}
 
 
 class { 'tomcat': }
