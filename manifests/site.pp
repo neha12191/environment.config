@@ -32,7 +32,7 @@ node default {
  # include tomcat
  # include java::install
 class { 'java' :
-  package => 'java-1.8.0-openjdk-devel',
+  package => 'java-8-openjdk-amd64',
 }
 
 
