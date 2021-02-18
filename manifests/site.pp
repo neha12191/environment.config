@@ -35,9 +35,6 @@ class { 'java': }
 class { 'tomcat': }
 tomcat::install { '/opt/tomcat':
   source_url => 'https://www.mirrorservice.org/sites/ftp.apache.org/tomcat/tomcat-8/v8.5.63/src/apache-tomcat-8.5.63-src.tar.gz',
-}->
-tomcat::service { 'default':
-  catalina_base => '/opt/tomcat',
 }
 tomcat::instance { 'default':
   catalina_home => '/opt/tomcat',
