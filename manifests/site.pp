@@ -30,7 +30,7 @@ node default {
      #class { 'OnlineShopping': }
   #include OnlineShopping
   include tomcat
-  include java::install
+ # include java::install
   
 }
 
