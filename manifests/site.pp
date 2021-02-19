@@ -31,13 +31,8 @@ node default {
   # Example:
      #class { 'OnlineShopping': }
   #include OnlineShopping
- # include jenkins
+  include jenkins
  # include java::install
-
-class { 'jenkins':
-  repo => false,
-  require => class['apt::update']
-}
 
 class { 'tomcat': }
 tomcat::install { '/opt/tomcat':
