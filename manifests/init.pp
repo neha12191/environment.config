@@ -5,10 +5,10 @@ class jenkins {
     }
 
     # update
-    exec { 'apt-get update':
-        command => 'apt-get update',
-        require => File['/etc/apt/sources.list.d/jenkins.list'],
-    }
+   # exec { 'apt-get update':
+    #    command => 'apt-get update',
+     #   require => File['/etc/apt/sources.list.d/jenkins.list'],
+    #}
 
     # source file
     file { '/etc/apt/sources.list.d/jenkins.list':
@@ -22,7 +22,7 @@ class jenkins {
     # jenkins package
     package { 'jenkins':
         ensure  => latest,
-        require => Exec['apt-get update'],
+       # require => Exec['apt-get update'],
     }
 
     # jenkins service
