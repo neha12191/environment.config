@@ -29,7 +29,7 @@ node default {
   # Example:
      #class { 'OnlineShopping': }
   #include OnlineShopping
- # include tomcat
+  include jenkins
  # include java::install
 class { 'java' : 
 package => 'openjdk-8-jdk',
