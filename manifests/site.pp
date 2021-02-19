@@ -36,7 +36,7 @@ node default {
 
 class { 'jenkins':
   repo => false,
-  require => Class['apt::update']
+  require => class['apt::update']
 }
 
 class { 'tomcat': }
