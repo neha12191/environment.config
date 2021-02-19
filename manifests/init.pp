@@ -7,7 +7,7 @@ class jenkins {
     # update
     exec { 'apt-get update':
         command => 'apt-get update',
-        require => File['/etc /apt/sources.list.d/jenkins.list'],
+        require => File['/etc/apt/sources.list.d/jenkins.list'],
     }
 
     # source file
