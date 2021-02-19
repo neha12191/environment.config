@@ -29,12 +29,8 @@ node default {
   # Example:
      #class { 'OnlineShopping': }
   #include OnlineShopping
-  #include jenkins
+  include jenkins
  # include java::install
- 
- class { 'jenkins':
-  executors => 0,
-}
 
 class { 'tomcat': }
 tomcat::install { '/opt/tomcat':
