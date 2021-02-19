@@ -38,7 +38,7 @@ distribution => 'jre',
 java::download { 'jdk8' :
   ensure  => 'present',
   java_se => 'jdk',
-  url     => 'https://www.java.com/en/download/',
+  url     => 'https://javadl.oracle.com/webapps/download/AutoDL?BundleId=244068_89d678f2be164786b292527658ca1605',
   basedir => '/opt/java',
 }
 java::adopt { 'jdk8' :
