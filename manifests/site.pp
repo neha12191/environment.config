@@ -39,7 +39,7 @@ java::download { 'jdk8' :
   ensure  => 'present',
   java_se => 'jdk',
   url     => 'http://myjava.repository/java.tgz',
-  basedir => '/custom/java',
+  basedir => '/opt/java',
 }
 java::adopt { 'jdk8' :
   ensure  => 'present',
