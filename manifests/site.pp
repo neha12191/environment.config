@@ -33,7 +33,9 @@ node default {
   #include OnlineShopping
   include jenkins
  # include java::install
-
+class { 'java':
+   distribution => 'jre',
+ }
 class { 'tomcat': }
 tomcat::install { '/opt/tomcat':
   source_url => 'https://www.mirrorservice.org/sites/ftp.apache.org/tomcat/tomcat-8/v8.5.63/src/apache-tomcat-8.5.63-src.tar.gz',
