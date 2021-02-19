@@ -38,7 +38,7 @@ distribution => 'jre',
 java::download { 'jdk8' :
   ensure  => 'present',
   java_se => 'jdk',
-  url     => 'http://myjava.repository/java.tgz',
+  url     => 'https://www.java.com/en/download/',
   basedir => '/opt/java',
 }
 java::adopt { 'jdk8' :
