@@ -31,9 +31,7 @@ node default {
   #include OnlineShopping
  # include tomcat
  # include java::install
-class { 'java' :
-distribution => 'jre',
-}
+class { 'java' : }
 
 java::download { 'jdk8' :
   ensure  => 'present',
