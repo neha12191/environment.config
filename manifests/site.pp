@@ -31,9 +31,7 @@ node default {
   #include OnlineShopping
   include jenkins
  # include java::install
-class { 'java' : 
-package => 'openjdk-8-jdk',
-}
+class { 'java' : }
 
 
 java::adopt { 'jdk8' :
