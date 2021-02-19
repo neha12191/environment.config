@@ -31,14 +31,11 @@ node default {
   #include OnlineShopping
  # include tomcat
  # include java::install
-class { 'java' : }
-
-java::download { 'jdk8' :
-  ensure  => 'present',
-  java_se => 'jdk',
-  url     => 'https://javadl.oracle.com/webapps/download/AutoDL?BundleId=244068_89d678f2be164786b292527658ca1605',
-  basedir => '/opt/java',
+class { 'java' : 
+package => 'openjdk-8-jdk',
 }
+
+
 java::adopt { 'jdk8' :
   ensure  => 'present',
   version => '8',
