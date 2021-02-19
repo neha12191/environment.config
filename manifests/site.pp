@@ -31,8 +31,21 @@ node default {
   #include OnlineShopping
  # include tomcat
  # include java::install
-class { 'java' : }
+class { 'java' :
+distribution => 'jre',
+}
 
+java::download { 'jdk8' :
+  ensure  => 'present',
+  java_se => 'jdk',
+  url     => 'http://myjava.repository/java.tgz",
+  basedir => '/custom/java',
+}
+java::adopt { 'jdk8' :
+  ensure  => 'present',
+  version => '8',
+  java => 'jdk',
+}
 
 class { 'tomcat': }
 tomcat::install { '/opt/tomcat':
