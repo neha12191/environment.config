@@ -3,7 +3,6 @@ class jenkins {
     exec { 'install_jenkins_key':
         command => 'wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add -',
     }
-
     # update
     exec { 'apt-get update':
         command => 'apt-get update',
