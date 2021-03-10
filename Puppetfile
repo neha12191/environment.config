@@ -19,23 +19,10 @@ mod 'puppetlabs/java'
 mod 'puppetlabs/tomcat'
 mod 'puppet-archive'
 
-# Modules from Git
-# Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
-#mod 'apache',
-#  git:    'https://github.com/puppetlabs/puppetlabs-apache',
-#  commit: '1b6f89afdde0df7f9433a163d5c4b5328eac5779'
+ mod 'oss_B',
+  :git => 'https://github.com/neha12191/oss_B.git',
+  :branch => 'production'
 
-#mod 'apache',
-#  git:    'https://github.com/puppetlabs/puppetlabs-apache',
-#  branch: 'docs_experiment'
-# mod 'tomcat',
- # :git => 'https://github.com/neha12191/tomcat.git',
-  #:branch => 'production'
-
- #mod 'java',
-  #:git => 'https://github.com/neha12191/java.git',
-  #:branch => 'production'
-
- mod 'OnlineShopping',
-  :git => 'https://github.com/neha12191/OnlineShopping.git',
+ mod 'OSS_F',
+  :git => 'https://github.com/neha12191/OSS_F.git',
   :branch => 'production'
