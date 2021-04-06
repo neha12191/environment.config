@@ -1,7 +1,7 @@
 ## site.pp ##
-Exec {
-    path => ['/bin', '/usr/bin'],
-}
+#Exec {
+ #   path => ['/bin', '/usr/bin'],
+#}
 File { backup => false }
 
 node default {
