@@ -15,7 +15,7 @@ mod 'puppet-jenkins'
 mod 'puppetlabs/postgresql'
 #mod 'rtyler-jenkins'
 mod 'stahnma/epel'
-mod 'puppetlabs/java'
+#mod 'puppetlabs/java'
 mod 'puppetlabs/tomcat'
 mod 'puppet-archive'
 
